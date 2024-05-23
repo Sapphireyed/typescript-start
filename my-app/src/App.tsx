@@ -3,6 +3,9 @@ import './App.css';
 import { Greet } from './components/Greet';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
+import { Status } from './components/Status';
+import { Heading } from './components/Heading';
+import { Oscar } from './components/Oscar';
 
 function App() {
   const details = {
@@ -17,6 +20,11 @@ function App() {
       <Greet name='Gosia' count={11} isLoggedIn={false}/>
       <Person details={details} />
       <PersonList names={names} />
+      <Status status={'loading'}/>
+      <Oscar>
+        <Heading>OScar smth</Heading>
+      </Oscar>
+      <Heading>TRALA LA LA</Heading>
     </div>
   );
 }
