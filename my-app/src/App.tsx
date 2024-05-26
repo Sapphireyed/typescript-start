@@ -25,7 +25,7 @@ function App() {
       <Oscar>
         <Heading>OScar smth</Heading>
       </Oscar>
-      <Heading>TRALA LA LA</Heading>
+      <Heading>Heading</Heading>
       <Button handleClick={(event, id) => {
         console.log('clicked', event, id)
       }} />
