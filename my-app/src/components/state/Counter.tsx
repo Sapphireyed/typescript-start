@@ -20,6 +20,7 @@ function reducer(state: CounterState, action: Action) {
       return {count: state.count - action.payload}
     case 'reset':
       return initialState;
+
     default: return state;
   }
 }
