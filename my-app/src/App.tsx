@@ -8,6 +8,7 @@ import { Heading } from './components/Heading';
 import { Oscar } from './components/Oscar';
 import { Button } from './components/Button';
 import { LoggedIn } from './components/state/isLoggedIn';
+import { User } from './components/state/User';
 
 function App() {
   const details = {
@@ -31,6 +32,7 @@ function App() {
         console.log('clicked', event, id)
       }} />
       <LoggedIn />
+      <User />
     </div>
   );
 }
