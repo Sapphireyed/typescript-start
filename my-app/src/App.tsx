@@ -7,6 +7,7 @@ import { Status } from './components/Status';
 import { Heading } from './components/Heading';
 import { Oscar } from './components/Oscar';
 import { Button } from './components/Button';
+import { LoggedIn } from './components/state/isLoggedIn';
 
 function App() {
   const details = {
@@ -29,6 +30,7 @@ function App() {
       <Button handleClick={(event, id) => {
         console.log('clicked', event, id)
       }} />
+      <LoggedIn />
     </div>
   );
 }
