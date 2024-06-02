@@ -10,6 +10,8 @@ import { Button } from './components/Button';
 import { LoggedIn } from './components/state/isLoggedIn';
 import { User } from './components/state/User';
 import { Counter } from './components/state/Counter';
+import { User as UserInContext } from './components/context/User';
+import { UserContextProvider } from './components/context/UserContext';
 
 function App() {
   const details = {
@@ -35,6 +37,9 @@ function App() {
       <LoggedIn />
       <User />
       <Counter />
+      <UserContextProvider>
+        <UserInContext />
+      </UserContextProvider>
     </div>
   );
 }
